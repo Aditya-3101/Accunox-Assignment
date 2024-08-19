@@ -9,9 +9,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid #131313ce;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media screen and (max-width: 880px) {
+  *::before {
+    content: "This Site doesn't work on Mobile Devices";
+  }
+
+  body {
+    display: none;
+  }
+}
+
